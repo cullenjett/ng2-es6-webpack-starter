@@ -1,3 +1,8 @@
+// Polyfills
+import "core-js";
+require("zone.js/dist/zone");
+
+// Vendor
 // Angular
 import '@angular/platform-browser';
 import '@angular/platform-browser-dynamic';
