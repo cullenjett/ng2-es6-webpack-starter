@@ -1,13 +1,17 @@
+var webpack = require("webpack")
 var HtmlWebpackPlugin = require("html-webpack-plugin")
 
 module.exports = {
-  entry: [
-    "./src/main.js",
-    "webpack-dev-server/client?http://localhost:8080"
-  ],
+  entry: {
+    app: "./src/main.js",
+    vendor: [
+      "./src/vendor.js",
+      "webpack-dev-server/client?http://localhost:8080"
+    ]
+  },
   output: {
     path: __dirname + "/dist",
-    filename: "bundle.js"
+    filename: "[name].bundle.js"
   },
   module: {
     loaders: [
@@ -22,6 +26,9 @@ module.exports = {
     ]
   },
   plugins: [
+    new webpack.optimize.CommonsChunkPlugin({
+      name: ["app", "vendor"]
+    }),
     new HtmlWebpackPlugin({
       template: "src/index.html"
     })
