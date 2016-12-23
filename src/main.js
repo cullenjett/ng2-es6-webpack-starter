@@ -1,1 +1,1 @@
-console.log("Hello from main.js 2")
+console.log("Hello from main.js")
