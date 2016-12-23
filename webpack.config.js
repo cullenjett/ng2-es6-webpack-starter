@@ -33,6 +33,7 @@ module.exports = {
       template: "src/index.html"
     })
   ],
+  devtool: 'cheap-module-eval-source-map',
   devServer: {
     contentBase: "./src",
     historyApiFallback: true,
