@@ -1,14 +1,15 @@
 {
   "name": "ng2-es6-webpack-starter",
   "version": "1.0.0",
-  "description": "",
+  "description": "Starter template for Angular2 using ES6 (no typescript) and Webpack",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --progress",
-    "build": "webpack --progress",
+    "build": "rm -rf dist/ && webpack --progress",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
+  "repository": "https://github.com/cullenjett/ng2-es6-webpack-starter",
   "author": "Cullen Jett <cullenjett@gmail.com>",
   "license": "MIT",
   "dependencies": {
