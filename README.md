@@ -1,8 +1,12 @@
 # Angular2, ES6, and Webpack Starter
 
 Because TypeScript can suck it.
+This is still a work in progress, so enter at your own risk.
 
-(This is obviously a work in progress, don't bother downloading it.)
+## What is this?
+
+This project is meant to be a simple starter template for Angular2+ apps that only uses ES6 (no TypeScript) by following the [TypeScript to JavaScript](https://angular.io/docs/ts/latest/cookbook/ts-to-js.html) guide from Angular. 
+
 
 ## Run It
 1. `npm install`
