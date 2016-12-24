@@ -4,10 +4,7 @@ var HtmlWebpackPlugin = require("html-webpack-plugin")
 module.exports = {
   entry: {
     app: "./src/main.js",
-    vendor: [
-      "./src/vendor.js",
-      "webpack-dev-server/client?http://localhost:8080"
-    ]
+    vendor: "./src/vendor.js"
   },
   output: {
     path: __dirname + "/dist",
@@ -36,6 +33,7 @@ module.exports = {
   devtool: 'cheap-module-eval-source-map',
   devServer: {
     contentBase: "./src",
+    inline: true,
     historyApiFallback: true,
     stats: 'minimal'
  }
