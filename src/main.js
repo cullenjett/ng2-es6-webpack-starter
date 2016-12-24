@@ -1,10 +1,4 @@
-let obj = Object.assign({}, {name: 'Cullen Jett'})
-console.log(obj)
+import { platformBrowserDynamic } from "@angular/platform-browser-dynamic"
+import { AppModule } from "./app/app.module"
 
-class Test {
-  constructor(message) {
-    console.log(`New Test created: ${message}`)
-  }
-}
-
-new Test("Hello from main.js")
+platformBrowserDynamic().bootstrapModule(AppModule)
